@@ -1,0 +1,27 @@
+{
+  "name": "angular-template-injection",
+  "version": "0.0.1",
+  "authors": [
+    "David Veenstra <davidjulianveenstra@gmail.com>"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:legalthings/angular-template-injection.git"
+  },
+  "description": "Service to inject a angular template",
+  "main": "template-injection.js",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4"
+  },
+  "devDependencies": {
+    "angular-mocks": "~1.4.6"
+  }
+}

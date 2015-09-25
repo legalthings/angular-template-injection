@@ -1,0 +1,25 @@
+{
+  "name": "angular-template-injection",
+  "description": "Service to inject a angular template",
+  "authors": [
+    "David Veenstra <davidjulianveenstra@gmail.com>"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:legalthings/angular-template-injection.git"
+  },
+  "version": "0.0.1",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "jshint && karma start"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "karma": "~0.13.10",
+    "jasmine-core": "~2.3.4",
+    "karma-jasmine": "~0.3.6",
+    "karma-firefox-launcher": "~0.1.6"
+  }
+}
