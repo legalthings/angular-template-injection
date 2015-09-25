@@ -81,6 +81,7 @@
       "require": false,
       "moment": false,
       "screenfull": false,
-      "exports": false
+      "exports": false,
+      "inject": false
     }
 }

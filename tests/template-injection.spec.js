@@ -12,15 +12,14 @@ describe('template injection', function(){
     angular.bootstrap(document.body);
     document.body.className = document.body.className + ' ng-app';
 
-    container = document.createElement("div");
+    container = document.createElement('div');
     container.id = 'container';
     document.body.appendChild(container);
   });
 
   beforeEach(module('injectTemplate'));
 
-  beforeEach(inject(function(_injectTemplate_, _$templateCache_,_$rootScope_, _$compile_){
-    // The injector unwraps the underscores (_) from around the parameter names when matching
+  beforeEach(inject(function(_injectTemplate_, _$templateCache_,_$rootScope_){
     injectTemplate = _injectTemplate_;
     $templateCache = _$templateCache_;
     $rootScope = _$rootScope_;
