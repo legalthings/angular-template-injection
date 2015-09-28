@@ -45,6 +45,20 @@ describe('template injection', function(){
     });
   });
 
+  it('should throw error when the template could not find', function() {
+    var scope = $rootScope.$new();
+    var error;
+    injectTemplate(container, '.square', 'does not exists', scope);
+
+    try {
+      $rootScope.$apply();
+    }
+    catch (err) {
+      error = err;
+    }
+    expect(function(){throw error;}).toThrow();
+  });
+
   it('with simple html', function() {
     var scope = $rootScope.$new();
     injectTemplate(container, '.square', 'test1', scope);
@@ -81,6 +95,7 @@ describe('template injection', function(){
     expect(elements.length).toBe(numSquares);
 
     angular.forEach(elements, function(el) {
+      expect(angular.element(el).text()).not.toBe('konichiwa');
       expect(angular.element(el).text()).toBe('hi!');
     });
   });

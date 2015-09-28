@@ -13,11 +13,13 @@ injectTemplate.factory('injectTemplate', function($compile, $sce, $templateReque
 
     var templateUrl = $sce.getTrustedResourceUrl(templateName);
     $templateRequest(templateUrl).then(function(template) {
+
       angular.forEach(elements, function(element){
         angular.element(element).append(template);
         $compile(element)(scope);
       });
-    }, function() {
+    },
+    function() {
       throw new Error('could not find template');
     });
 
