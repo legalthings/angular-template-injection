@@ -9,7 +9,7 @@
     "url": "git@github.com:legalthings/angular-template-injection.git"
   },
   "description": "Service to inject a angular template",
-  "main": "template-injection.js",
+  "main": "src/inject-template.js",
   "license": "MIT",
   "ignore": [
     "**/.*",
