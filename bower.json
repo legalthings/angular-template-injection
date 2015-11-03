@@ -1,7 +1,7 @@
 {
   "name": "angular-template-injection",
-  "version": "0.0.1",
   "authors": [
+    "LegalThings <info@legalthings.net>",
     "David Veenstra <davidjulianveenstra@gmail.com>"
   ],
   "repository": {
