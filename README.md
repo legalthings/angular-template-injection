@@ -6,10 +6,10 @@ CSS selector.
 
 ## Installation
 
-     bower install git@github.com:legalthings/angular-template-injection.git --save
+     bower install angular-template-injection --save
 
 ### Usage
-The function expects a normal element or a Jquery element. In addition, the `scope` must be
+The function expects a normal DOM element or a jQuery element. In addition, the `scope` must be
 specified that each child should use as the prototype for its scope.
 
 The `source` argument should be an object with either a `template` property with the template as
